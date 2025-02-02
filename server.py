@@ -1,6 +1,9 @@
 from flask import Flask,request,jsonify
 import util
 from flask_cors import CORS
+import os
+
+
 
 app = Flask(__name__)
 CORS(app,origins="*")
@@ -20,4 +23,5 @@ def classify_ferti():
     return response 
 
 if __name__=='__main__':
-    app.run()
+    port = int(os.environ.get('PORT', 5000))  # Get port from environment variable
+    app.run(host='0.0.0.0', port=port, debug=True)
