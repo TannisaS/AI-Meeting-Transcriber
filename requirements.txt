@@ -217,6 +217,8 @@ virtualenv==20.26.6
 wcwidth==0.2.13
 webcolors==1.13
 webencodings==0.5.1
+openai-whisper==20231117  
+ffmpeg==1.4  
 websocket-client==1.7.0
 Werkzeug==3.0.1
 wrapt==1.14.1
